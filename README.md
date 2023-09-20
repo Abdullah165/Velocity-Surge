@@ -10,7 +10,7 @@
 
 |   AI Car Controller                           |                                                                   
 | ----------------------------------- | 
-| - ![Screenshot 2023-09-20 195943](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/455032c7-50da-44a0-b8a2-e857d7f484f5) | 
+|![Screenshot 2023-09-20 195943](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/4c5790aa-953d-470a-b851-3574fee2f64b) | 
 
 
 
