@@ -27,7 +27,7 @@
 
 
 
-| You Win 😎        | Pause 🤨| Music Settings 🎶|
+| You Win 😎        |  Music Settings 🎶 |Pause 🤨|
 | ---------------------- | ---------------------- | --------------------------|
 |![Screenshot 2023-09-13 185751](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/5c9a4e5c-b7a7-4074-96df-33fa274c7e31) |![Screenshot 2023-09-13 195952](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/f3029ed5-a485-4f46-b389-a81c2665cf5a) | ![Screenshot 2023-09-13 195958](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/061f183e-ea32-4fd8-b542-3f3dbe48a1e0) |
 
