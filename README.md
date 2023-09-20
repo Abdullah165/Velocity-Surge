@@ -20,7 +20,7 @@
 
 | select car               | select another car           |
 | ---------------------- | ---------------------- |
-|![Screenshot 2023-09-13 195826](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/99a2fdb7-aa75-41df-aa8b-0680d4b4d694) | ![Screenshot 2023-09-13 195909](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/a96f4119-5436-4e6b-8dd9-6106c8f42cca) |
+|![Screenshot 2023-09-13 195847](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/5b4dc4b2-2150-4328-99c8-8304fd21df56) | ![Screenshot 2023-09-13 195909](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/a96f4119-5436-4e6b-8dd9-6106c8f42cca) |
 
 | select allowed car to play               | and Go          |
 | ---------------------- | ---------------------- |
