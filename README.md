@@ -17,6 +17,12 @@
 ![Screenshot 2023-09-18 151928](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/84a5f1d0-0daa-4b3e-a11e-e48c2c7ff2da)
 ![Screenshot 2023-09-13 200011](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/6eb09a8b-8f35-417d-a1aa-2b94518e7a9c)
 ![Screenshot 2023-09-13 200453](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/f3c313b7-1f19-42f7-8a6f-4d8b9e35f155)
+![Screenshot 2023-09-13 185751](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/5c9a4e5c-b7a7-4074-96df-33fa274c7e31)
 ![Screenshot 2023-09-13 195952](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/f3029ed5-a485-4f46-b389-a81c2665cf5a)
 ![Screenshot 2023-09-13 195958](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/061f183e-ea32-4fd8-b542-3f3dbe48a1e0)
+
+
+- And this for mobile version
+![Screenshot 2023-09-16 161113](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/4bcccf3e-c8e3-4610-b0b5-5d6c5104c461)
+
 
