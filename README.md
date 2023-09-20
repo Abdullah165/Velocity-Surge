@@ -16,25 +16,25 @@
 
 | play               | select Season & Difficulty               |
 | ---------------------- | ---------------------- |
-| ![Screenshot 2023-09-13 195815](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/2cc20526-82f6-44b6-9813-5f96a14333e1) |  ![Screenshot 2023-09-13 195826](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/fd8f81d6-dec1-47c9-ad5a-6698a8fc9e82) |
+|![Screenshot 2023-09-13 195815](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/24d5694f-e352-4235-aada-2d58eb8bb3c4) | ![Screenshot 2023-09-13 195826](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/99a2fdb7-aa75-41df-aa8b-0680d4b4d694) |
 
 | select car               | select another car           |
 | ---------------------- | ---------------------- |
-|![Screenshot 2023-09-13 195847](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/38203562-cca3-456c-bd6b-d66edf0f8a1e) | ![Screenshot 2023-09-13 195909](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/3c6250df-4086-43cc-80a8-897b35af3baf) |
+|![Screenshot 2023-09-13 195826](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/99a2fdb7-aa75-41df-aa8b-0680d4b4d694) | ![Screenshot 2023-09-13 195909](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/a96f4119-5436-4e6b-8dd9-6106c8f42cca) |
 
 | select allowed car to play               | and Go          |
 | ---------------------- | ---------------------- |
-|![Screenshot 2023-09-13 195927](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/44cd2e9c-89fd-4228-b305-fdba348b1a02) |![Screenshot 2023-09-13 195936](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/73391a27-941c-4359-894d-25057e824dfa) |
+|![Screenshot 2023-09-13 195927](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/82bbac8c-69f9-46c6-85a8-628d53e2bb09) |![Screenshot 2023-09-13 195936](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/db2552aa-f309-4bd2-b0ed-4aa3fd563a82) |
 
 | Enjoy        | Happy Racing Dude 🏎️| Perfect drift and bouns 💲💸|
 | ---------------------- | ---------------------- | --------------------------|
-|![Screenshot 2023-09-18 151928](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/84a5f1d0-0daa-4b3e-a11e-e48c2c7ff2da) |![Screenshot 2023-09-13 200011](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/6eb09a8b-8f35-417d-a1aa-2b94518e7a9c) | ![Screenshot 2023-09-13 200453](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/f3c313b7-1f19-42f7-8a6f-4d8b9e35f155) |
+|![Screenshot 2023-09-18 151928](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/3b32a6b7-d920-4ac4-b69f-3f9e2a1982a8) |![Screenshot 2023-09-13 200011](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/942239f9-94fb-4da4-a927-ec8ae24dfe4c) |![Screenshot 2023-09-13 200453](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/e58a29b7-d044-4db8-97d0-d78ff7aad802)|
 
 
 
 | You Win 😎        |  Music Settings 🎶 |Pause 🤨|
 | ---------------------- | ---------------------- | --------------------------|
-|![Screenshot 2023-09-13 185751](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/5c9a4e5c-b7a7-4074-96df-33fa274c7e31) |![Screenshot 2023-09-13 195952](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/f3029ed5-a485-4f46-b389-a81c2665cf5a) | ![Screenshot 2023-09-13 195958](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/061f183e-ea32-4fd8-b542-3f3dbe48a1e0) |
+|![Screenshot 2023-09-13 185751](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/fd5edad4-2a80-4802-85ab-1e34ace166a8) |![Screenshot 2023-09-13 195952](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/c0120fc3-8796-4978-b846-e1967ee770e6) |![Screenshot 2023-09-13 195958](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/1c10caa1-08f2-4cf7-9120-3aa91822856c) |
 
 
 
@@ -42,6 +42,6 @@
 
 
 - And this for mobile version
-![Screenshot 2023-09-16 161113](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/4bcccf3e-c8e3-4610-b0b5-5d6c5104c461)
+![Screenshot 2023-09-16 161113](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/f1b07d3e-a4bf-49f3-a11a-4f1b7b7a1942)
 
 
