@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 013ad740bcea5e749bdd03844da2ca2c
+  - enabled: 1
+    path: Assets/Scenes/WinterScene.unity
+    guid: f067e431ee6d6c7428f32e9bd63f9e70
+  - enabled: 1
+    path: Assets/Scenes/FallScene.unity
+    guid: b4e45e5fb6475d04399fe033a0efb717
+  - enabled: 1
+    path: Assets/Scenes/SummerScene.unity
+    guid: 26bc028b14593174fa0074edd1325571
+  - enabled: 1
+    path: Assets/Scenes/SpringScene.unity
+    guid: 0a248f27946c2b84c98ea43e7d3e1cc9
+  m_configObjects: {}
