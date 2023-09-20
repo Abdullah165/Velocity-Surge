@@ -48,13 +48,6 @@ public class AICarController : Car
             UpdateWheelMeshes();
 
             HandleCarFlipping();
-
-            // if AICar's speed less than 1 means it out of the track or hit something and stop it 
-            // so recover it and back to race
-            //if (carSpeed <= 10 && Math.Abs(localVelocityX) <= 10)
-            //{
-            //    Recover();
-            //}
         }
     }
 
