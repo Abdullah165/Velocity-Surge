@@ -2,7 +2,8 @@
  Racing game using Unity
 
  What I used
- -![Uploading EventRoyalStarGIF.gif…]() Unity Event system to decouble between classes
+ -![EventRoyalStarGIF (2)](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/0ba02485-334e-4a6c-88d8-2f728378a6a0)
+ Unity Event system to decouble between classes
  - Unity New Input system to handle different inputs from different Platforms
  - Scriptable Objects to store data like Car Specifications
  - Ray cast with Waypoint system for AI Cars Controller
