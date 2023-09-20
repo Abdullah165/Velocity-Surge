@@ -8,7 +8,7 @@
  - Ray cast with Waypoint system for AI Cars Controller
  - and many more. feel free to ask any question about this project.
 
-|   AI car                           |                                                                   
+|   AI Car Controller                           |                                                                   
 | ----------------------------------- | 
 | - ![Screenshot 2023-09-20 195943](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/455032c7-50da-44a0-b8a2-e857d7f484f5) | 
 
