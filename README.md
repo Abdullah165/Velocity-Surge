@@ -9,7 +9,7 @@
  - and many more. feel free to ask any question about this project.
 
 
-| Select Car               | Dog pics               |
+| play               | select Season & Difficullty               |
 | ---------------------- | ---------------------- |
 | ![Screenshot 2023-09-13 195815](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/2cc20526-82f6-44b6-9813-5f96a14333e1) |  ![Screenshot 2023-09-13 195826](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/fd8f81d6-dec1-47c9-ad5a-6698a8fc9e82) |
 
