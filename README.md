@@ -43,7 +43,9 @@
 
 
 
-- And this for mobile version
-![Screenshot 2023-09-16 161113](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/f1b07d3e-a4bf-49f3-a11a-4f1b7b7a1942)
+# And this for mobile version (soom on google play)
+![Screenshot 2023-09-25 215412](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/4cf3c959-6817-4e09-82b3-ba396a5a500d)
+![Screenshot 2023-09-25 215727](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/64f807fa-93c9-4944-a04f-9e828dd9555c)
+
 
 
