@@ -8,7 +8,7 @@ Racing game using Unity
  - Ray cast with Waypoint system for AI Cars Controller.
  - and many more. feel free to ask any question about this project.
 
- - # Play Velocity Surge ->  [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/crazy-fast)  
+ - # Play Velocity Surge ->  [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/velocity-surge)  
 
 |   AI Car Controller                           |                                                                   
 | ----------------------------------- | 
