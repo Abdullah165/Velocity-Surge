@@ -1,11 +1,11 @@
-# Crazy_Fast
- Racing game using Unity
+# Velocity Surge 
+Racing game using Unity
 
- What I used
- - Unity Event system to decouple between classes
- - Unity New Input system to handle different inputs from different Platforms
- - Scriptable Objects to store data like Car Specifications
- - Ray cast with Waypoint system for AI Cars Controller
+ What I used?
+ - Unity Event system to decouple between classes.
+ - Unity New Input system to handle different inputs from different Platforms.
+ - Scriptable Objects to store data like Car Specifications.
+ - Ray cast with Waypoint system for AI Cars Controller.
  - and many more. feel free to ask any question about this project.
 
  - # Play Crazy_Fast ->  [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/crazy-fast)  
