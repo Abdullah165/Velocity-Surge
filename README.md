@@ -8,7 +8,7 @@ Racing game using Unity
  - Ray cast with Waypoint system for AI Cars Controller.
  - and many more. feel free to ask any question about this project.
 
- - # Android ->  [![https://play.google.com](https://img.shields.io/badge/https://play.google.com-0077B5?style=for-the-badge&logo=https://https://play.google.com&logoColor=white&labelColor=red&color=blue)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
+ - # Android ->  [![https://play.google.com](https://img.shields.io/badge/google play-0077B5?style=for-the-badge&logo=https://https://play.google.com&logoColor=white&labelColor=red&color=blue)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
  - # PC ->  [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/velocity-surge)
    
 
