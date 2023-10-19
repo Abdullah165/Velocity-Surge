@@ -9,7 +9,7 @@ Racing game using Unity
  - and many more. feel free to ask any question about this project.
 
  - # Android ->  [![https://play.google.com](https://img.shields.io/badge/https://play.google.com-0077B5?style=for-the-badge&logo=https://play.google.com&logoColor=white&labelColor=red&color=red)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
- - # Play Velocity Surge ->  [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/velocity-surge)
+ - # PC ->  [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/velocity-surge)
    
 
 |   AI Car Controller                           |                                                                   
