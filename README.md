@@ -48,8 +48,8 @@ Racing game using Unity
 
 # Play 👇
  - # Android ->  [![Google Play](https://img.shields.io/badge/https://play.google.com-0077B5?style=for-the-badge&logo=https://play.google.com&logoColor=black&labelColor=red&color=black)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
-![Screenshot 2023-09-25 215412](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/4cf3c959-6817-4e09-82b3-ba396a5a500d)
-![Screenshot 2023-09-25 215727](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/64f807fa-93c9-4944-a04f-9e828dd9555c)
+![Screenshot_20231024_154831_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/a760c6cb-dbea-4586-8295-8a73e9834726)
+![Screenshot_20231024_141652_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/db4a7aa7-c9c0-4d3d-8ef8-fe90df94ed33)
 
 
 
