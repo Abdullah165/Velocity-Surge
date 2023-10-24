@@ -39,9 +39,7 @@ Racing game using Unity
 
 | You Win 😎        |  Music Settings 🎶 |Pause 🤨|
 | ---------------------- | ---------------------- | --------------------------|
-|![Screenshot_20231024_151359_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/08b1bcfb-b62e-4774-9b9b-9f1402842582) |![Screenshot_20231024_141826_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/3d3a22ef-44ae-4e92-8e2d-47632b5b6523)
-|![Screenshot_20231024_141819_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/875d80c0-191c-47e7-b649-552222f797e5)
- |
+|![Screenshot_20231024_151359_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/08b1bcfb-b62e-4774-9b9b-9f1402842582) |![Screenshot_20231024_141826_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/3d3a22ef-44ae-4e92-8e2d-47632b5b6523)|![Screenshot_20231024_141819_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/875d80c0-191c-47e7-b649-552222f797e5)|
 
 
 
