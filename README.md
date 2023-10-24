@@ -39,7 +39,9 @@ Racing game using Unity
 
 | You Win 😎        |  Music Settings 🎶 |Pause 🤨|
 | ---------------------- | ---------------------- | --------------------------|
-|![Screenshot 2023-09-13 185751](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/fd5edad4-2a80-4802-85ab-1e34ace166a8) |![Screenshot 2023-09-13 195952](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/c0120fc3-8796-4978-b846-e1967ee770e6) |![Screenshot 2023-09-13 195958](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/1c10caa1-08f2-4cf7-9120-3aa91822856c) |
+|![Screenshot_20231024_151359_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/08b1bcfb-b62e-4774-9b9b-9f1402842582) |![Screenshot_20231024_141826_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/3d3a22ef-44ae-4e92-8e2d-47632b5b6523)
+|![Screenshot_20231024_141819_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/875d80c0-191c-47e7-b649-552222f797e5)
+ |
 
 
 
