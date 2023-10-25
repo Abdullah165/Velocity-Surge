@@ -10,7 +10,7 @@ Racing game using Unity
 
 # Play 👇
  - # Android ->  [![Google Play](https://img.shields.io/badge/https://play.google.com-0077B5?style=for-the-badge&logo=https://play.google.com&logoColor=black&labelColor=red&color=black)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
- - [![](https://img.shields.io/badge/Google Play-red.svg)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
+ - [![](https://img.shields.io/badge/Google_Play-red.svg)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
  - # PC ->  [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/velocity-surge)
    
 
