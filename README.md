@@ -11,7 +11,7 @@ Racing game using Unity
 # Play 👇
  - # Android ->  [![](https://img.shields.io/badge/Google_Play-yellow.svg)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
  - # PC ->    [![](https://img.shields.io/badge/Itch.io-red.svg)](https://abdullah000.itch.io/velocity-surge)
- -   [![Itch.io](https://img.shields.io/badge/Itch.io-0077B5?style=for-the-badge&logo=Itch.io&logoColor=white&labelColor=red&color=red)](https://abdullah000.itch.io/velocity-surge)
+
    
 
 |   AI Car Controller                           |                                                                   
@@ -48,7 +48,7 @@ Racing game using Unity
 
 
 # Play 👇
- - # Android ->  [![Google Play](https://img.shields.io/badge/https://play.google.com-0077B5?style=for-the-badge&logo=https://play.google.com&logoColor=black&labelColor=red&color=black)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
+ - # Android -> [![](https://img.shields.io/badge/Google_Play-yellow.svg)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
 ![Screenshot_20231024_154831_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/a760c6cb-dbea-4586-8295-8a73e9834726)
 ![Screenshot_20231024_141652_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/db4a7aa7-c9c0-4d3d-8ef8-fe90df94ed33)
 
