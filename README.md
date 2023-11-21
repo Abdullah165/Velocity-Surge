@@ -22,11 +22,11 @@ Racing game using Unity
 
 | play               | select Season & Difficulty               |
 | ---------------------- | ---------------------- |
-|![Screenshot 2023-09-13 195815](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/24d5694f-e352-4235-aada-2d58eb8bb3c4) | ![Screenshot 2023-09-13 195826](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/99a2fdb7-aa75-41df-aa8b-0680d4b4d694) |
+|![Screenshot 2023-11-21 170306](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/2cad9bb1-3ca9-463f-988c-addb90fba008) | ![Screenshot 2023-11-21 170352](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/e7bcbf28-68f8-415e-a7aa-9719eafbb98d) |
 
 | select car               | select another car           |
 | ---------------------- | ---------------------- |
-|![Screenshot 2023-09-13 195847](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/5b4dc4b2-2150-4328-99c8-8304fd21df56) | ![Screenshot 2023-09-13 195909](https://github.com/Abdullah165/Crazy_Fast/assets/63372032/a96f4119-5436-4e6b-8dd9-6106c8f42cca) |
+|![Screenshot 2023-11-21 170439](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/3250a557-c54e-4987-b6e6-a13e5b4967fb) |![Screenshot 2023-11-21 170750](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/64207c89-cd7b-4701-98e0-1d41ed9baeb1) |
 
 | select allowed car to play               | and Go          |
 | ---------------------- | ---------------------- |
