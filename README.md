@@ -47,10 +47,7 @@ Racing game using Unity
 
 
 
-# Play 👇
- - # Android -> [![](https://img.shields.io/badge/Google_Play-yellow.svg)](https://play.google.com/store/apps/details?id=com.Abdullah.CrazyFast)
-![Screenshot_20231024_154831_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/a760c6cb-dbea-4586-8295-8a73e9834726)
-![Screenshot_20231024_141652_Velocity Surge (Racing game)](https://github.com/Abdullah165/Velocity-Surge/assets/63372032/db4a7aa7-c9c0-4d3d-8ef8-fe90df94ed33)
+
 
 
 
