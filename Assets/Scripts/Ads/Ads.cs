@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Ads : MonoBehaviour
 {
-    //const string rewardedAdId = "ca-app-pub-5782906284382102/7591152813";
     const string rewardedAdId = "ca-app-pub-3940256099942544/5224354917";
 
     private RewardedAd _rewardedAd;
