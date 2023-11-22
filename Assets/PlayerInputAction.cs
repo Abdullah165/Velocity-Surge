@@ -62,6 +62,15 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Nitro"",
+                    ""type"": ""Button"",
+                    ""id"": ""55bb5e00-5b1c-4b4b-80c0-4c9ced168bc1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -89,7 +98,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""a33fb55b-912b-42aa-949b-711b2bf57661"",
+                    ""id"": ""84aebb70-1ab9-40e4-ac95-2a547e3bd865"",
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -132,15 +141,37 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""0ffa531f-211a-42c5-82c8-e70b0ae57ca5"",
+                    ""name"": ""Mobile"",
+                    ""id"": ""648b6c44-a8ac-4e41-918c-b23f863aebef"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveVertically"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""c8dede5e-ad5c-4340-a1c8-c501acbc612b"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveVertically"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""a33fb55b-912b-42aa-949b-711b2bf57661"",
                     ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MoveVertically"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""Arrows"",
@@ -209,6 +240,39 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""Mobile Arrows"",
+                    ""id"": ""2f790aae-7174-408c-9fd4-3d5a6f9ae684"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveHorizontally"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""ad5cbef1-64b0-4b01-8e61-7611fb9831f7"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveHorizontally"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""d366700c-68c9-421f-9384-587abf2092ff"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveHorizontally"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""3788dbcf-6a45-4c6c-92e3-2bb6c82ef92c"",
                     ""path"": ""<Keyboard>/space"",
@@ -229,6 +293,39 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b27ffcb0-c57f-4277-a65d-086a05d7a14a"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6a21b0ef-2536-47cf-96aa-04de109f0f6a"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Nitro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""80be1eb8-7a80-4033-856f-a1779e7736aa"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Nitro"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -241,6 +338,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         m_Vehicle_MoveHorizontally = m_Vehicle.FindAction("MoveHorizontally", throwIfNotFound: true);
         m_Vehicle_Brake = m_Vehicle.FindAction("Brake", throwIfNotFound: true);
         m_Vehicle_Pause = m_Vehicle.FindAction("Pause", throwIfNotFound: true);
+        m_Vehicle_Nitro = m_Vehicle.FindAction("Nitro", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -306,6 +404,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
     private readonly InputAction m_Vehicle_MoveHorizontally;
     private readonly InputAction m_Vehicle_Brake;
     private readonly InputAction m_Vehicle_Pause;
+    private readonly InputAction m_Vehicle_Nitro;
     public struct VehicleActions
     {
         private @PlayerInputAction m_Wrapper;
@@ -314,6 +413,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         public InputAction @MoveHorizontally => m_Wrapper.m_Vehicle_MoveHorizontally;
         public InputAction @Brake => m_Wrapper.m_Vehicle_Brake;
         public InputAction @Pause => m_Wrapper.m_Vehicle_Pause;
+        public InputAction @Nitro => m_Wrapper.m_Vehicle_Nitro;
         public InputActionMap Get() { return m_Wrapper.m_Vehicle; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -335,6 +435,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @Nitro.started += instance.OnNitro;
+            @Nitro.performed += instance.OnNitro;
+            @Nitro.canceled += instance.OnNitro;
         }
 
         private void UnregisterCallbacks(IVehicleActions instance)
@@ -351,6 +454,9 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @Nitro.started -= instance.OnNitro;
+            @Nitro.performed -= instance.OnNitro;
+            @Nitro.canceled -= instance.OnNitro;
         }
 
         public void RemoveCallbacks(IVehicleActions instance)
@@ -374,5 +480,6 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
         void OnMoveHorizontally(InputAction.CallbackContext context);
         void OnBrake(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnNitro(InputAction.CallbackContext context);
     }
 }

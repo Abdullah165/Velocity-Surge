@@ -6,8 +6,8 @@ public class Car : MonoBehaviour
     [SerializeField] protected Transform[] wheelMeshes;
     [SerializeField] protected WheelCollider[] wheelColliders;
     [SerializeField] protected float maxSteeringAngle = 30f;
-    [SerializeField] protected float motorForce = 800f;
-    [SerializeField] protected float brakeForce = 2000f;
+    [SerializeField] protected float motorForce = 1000f;
+    [SerializeField] float maxAcceleration = 2f;
 
     [SerializeField] protected Vector3 bodyMassCenter;
     [SerializeField] protected float suspensionDistance = 0.2f;
@@ -16,21 +16,22 @@ public class Car : MonoBehaviour
     protected float localVelocityX;
     protected float localVelocityZ;
     protected float carSpeed;
-    protected const float minimumCarSpeed = 70f;
+    protected const float minimumCarSpeed = 100f;
     protected float motorInput = 1;
 
     protected AudioSource carEngineSound;
     protected const float minPitch = 0.1f;
     protected const float maxPitch = 0.9f;
-    protected const float slowMotionScale = 0.3f;
+    protected const float slowMotionScale = 0.2f;
 
     protected bool isWrongDirection;
+
 
     protected void ApplyMotorForce()
     {
         for (int i = 0; i < wheelColliders.Length; i++)
         {
-            wheelColliders[i].motorTorque = motorInput * motorForce;
+            wheelColliders[i].motorTorque = motorInput * motorForce * maxAcceleration;
         }
     }
 
@@ -112,18 +113,12 @@ public class Car : MonoBehaviour
 
     protected void ApplyHandbrake(float strength)
     {
-        foreach (WheelCollider wheel in wheelColliders)
-        {
-            wheel.brakeTorque = brakeForce * strength;
-        }
+        carRigidbody.drag = strength;
     }
 
     protected void ReleaseHandbrake()
     {
-        foreach (WheelCollider wheel in wheelColliders)
-        {
-            wheel.brakeTorque = 0;
-        }
+        carRigidbody.drag = 0;
     }
 
     public virtual void OnTriggerEnter(Collider other)
@@ -141,7 +136,7 @@ public class Car : MonoBehaviour
     protected IEnumerator TriggerSlowMotion()
     {
         Time.timeScale = slowMotionScale;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
         Time.timeScale = 1;
         GameOverUI.Get().Show();
     }

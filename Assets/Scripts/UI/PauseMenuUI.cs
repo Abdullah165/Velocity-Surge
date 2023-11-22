@@ -11,20 +11,12 @@ public class PauseMenuUI : MonoBehaviour
 
     [SerializeField] private GameObject optionsMenuUI;
 
-    private CarController carController;
-    //private Season selectedSeason;
-
     private void OnEnable()
     {
         resumeButton.Select();
     }
     private void Awake()
     {
-        carController = CarSelectionManager.Get().GetCurrentCarController();
-
-        //int season = PlayerPrefs.GetInt(PlayerPrefsKeys.SelectedSeason.ToString());
-        //selectedSeason = (Season)season;
-
         resumeButton.onClick.AddListener(() =>
         {
             TogglePauseGame();
@@ -32,7 +24,7 @@ public class PauseMenuUI : MonoBehaviour
 
         recoverButton.onClick.AddListener(() =>
         {
-            carController.Recover();
+            CarSelectionManager.Get().GetCurrentCarController().Recover();
             TogglePauseGame();
         });
 
@@ -56,10 +48,10 @@ public class PauseMenuUI : MonoBehaviour
     void Start()
     {
         Hide();
-        GameInputManager.Get().OnPauseAction += SettingMenuUI_OnPauseAction;
+        GameInputManager.Get().OnPauseAction += PauseMenuUI_OnPauseAction;
     }
 
-    private void SettingMenuUI_OnPauseAction(object sender, System.EventArgs e)
+    private void PauseMenuUI_OnPauseAction(object sender, System.EventArgs e)
     {
         TogglePauseGame();
     }
@@ -68,7 +60,7 @@ public class PauseMenuUI : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-    private void TogglePauseGame()
+    public void TogglePauseGame()
     {
         gameObject.SetActive(!gameObject.activeSelf);
 

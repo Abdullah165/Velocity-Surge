@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8643790efc8843645a91c9a271625a8b, type: 3}
   m_Name: Tractor
   m_EditorClassIdentifier: 
-  speed: 0.4
-  acceleration: 0.2
-  brake: 0.6
-  handling: 0.6
+  speed: 0.45
+  acceleration: 0.3
+  brake: 0.4
+  handling: 0.4
   Price: 0

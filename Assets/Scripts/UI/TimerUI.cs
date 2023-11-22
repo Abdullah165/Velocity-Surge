@@ -5,17 +5,22 @@ public class TimerUI : MonoBehaviour
 {
     private float timerValue;
     [SerializeField] TextMeshProUGUI timerText;
+    [SerializeField] TextMeshProUGUI bestTimerScoreText;
+
+    private float bestScore;
 
     private void Start()
     {
         timerValue = 0;
         CarGameManager.Get().OnStateChanged += TimerUI_OnStateChanged;
 
-        //player select the timer mood.s
+        //player select the timer mood.
         if (PlayerPrefs.GetInt(PlayerPrefsKeys.SelectedTimer.ToString()) == 0)
         {
             Hide();
         }
+
+        UpdateBestTimerScore();
     }
 
     private void TimerUI_OnStateChanged(object sender, CarGameManager.OnStateChangedEventArgs e)
@@ -70,4 +75,20 @@ public class TimerUI : MonoBehaviour
     }
 
     public float GetCurrentTimer() => timerValue;
+
+    private void UpdateBestTimerScore()
+    {
+        bestScore = PlayerPrefs.GetFloat(PlayerPrefsKeys.BestScore.ToString());
+
+        float minutes = Mathf.FloorToInt(bestScore / 60);
+        float seconds = Mathf.FloorToInt(bestScore % 60);
+        if (bestScore >= 60)
+        {
+            bestTimerScoreText.text = string.Format("{0:0}:{1:00}", minutes, seconds) + " min";
+        }
+        else
+        {
+            bestTimerScoreText.text = string.Format("{0:0}:{1:00}", minutes, seconds) + " sec";
+        }
+    }
 }

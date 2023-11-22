@@ -14,6 +14,7 @@ public class CarController : Car
     [Header("Car Effects")]
     [SerializeField] private TrailRenderer[] trails;
     [SerializeField] private ParticleSystem[] drifittingEffects;
+    [SerializeField] private GameObject[] nitroEffects;
 
     [SerializeField] private Transform carIcon;
 
@@ -24,6 +25,8 @@ public class CarController : Car
 
     private bool isDrifting = false;
     private const float angularVelocityThreshold = 0.001f;
+    private float tempCarMass;
+    private bool isNitroReady;
 
     private void Awake()
     {
@@ -40,10 +43,12 @@ public class CarController : Car
 
         HideTrails();
         HideDrifittingEffect();
+        HideNitroEffect();
     }
 
     private void Start()
     {
+        tempCarMass = carRigidbody.mass;
         lastPosition = transform.position;
 
         if (!GetComponent<AICarController>().enabled)
@@ -52,11 +57,28 @@ public class CarController : Car
         }
 
         GameInputManager.Get().OnBrakeAction += CarController_OnBrakeAction;
+        GameInputManager.Get().OnNitroActionReady += CarController_OnNitroAction;
+        GameInputManager.Get().OnNitroActionCanceled += CarController_OnNitroActionCanceled;
+    }
+
+    private void CarController_OnNitroActionCanceled(object sender, EventArgs e)
+    {
+        isNitroReady = false;
+        carRigidbody.mass = tempCarMass;
+    }
+
+    private void CarController_OnNitroAction(object sender, EventArgs e)
+    {
+        if (CarGameManager.Get().IsGamePlaying())
+        {
+            isNitroReady = true;
+            ApplyNitroBoost();
+        }
     }
 
     private void CarController_OnBrakeAction(object sender, System.EventArgs e)
     {
-        ApplyHandbrake(1);
+        ApplyHandbrake(0.6f);
     }
 
     private void FixedUpdate()
@@ -65,44 +87,56 @@ public class CarController : Car
         {
             CalculateCarSpeed();
             CalculateLocalVelocityX();
-            CalculateLocalVelocityZ();
 
             float steeringAngle = maxSteeringAngle * GameInputManager.Get().GetMovementHorizontal();
-            motorInput = GameInputManager.Get().GetMovementVertical();
 
             //// Apply steering angle to the front wheels
             wheelColliders[0].steerAngle = steeringAngle;
             wheelColliders[1].steerAngle = steeringAngle;
 
-            // Apply motor force to all wheels
-            ApplyMotorForce();
+           
+
             PlayEngineSound();
 
-            bool isBrake = GameInputManager.Get().IsBraking();
-
-            if (!isBrake)
+            if(motorInput == -1 && carSpeed > 100)
             {
+                ApplyHandbrake(1);
+            }
+            else
+            {
+                ApplyMotorForce();
                 ReleaseHandbrake();
             }
 
-            //Car lose traction and apply drifting effects.
+            if (isNitroReady && NitroUI.Get().HasNitro())
+            {
+                motorInput = 1;
+            }
+            else
+            {
+                motorInput = GameInputManager.Get().GetMovementVertical();
+                SoundManager.Get().StopNitroSound();
+                HideNitroEffect();
+            }
+
+            //bool isBrake = GameInputManager.Get().IsBraking();
+
+            //if (!isBrake)
+            //{
+            //    ReleaseHandbrake();
+            //}
+
             if (IsDrifting())
             {
                 ShowTrails();
                 ShowDrifittingEffect();
-                SetWheelStiffness(1.2f); // Reduce wheel stiffness for oversteer
-
-                //Apply brakes If the car lose controlling to avoid strange behaviours
-                if (localVelocityZ > 1)
-                {
-                    ApplyHandbrake(0.01f);
-                }
+                SetWheelStiffness(1.8f); // Increase stiffness a little bit for nice drift and also avoid over control 
             }
             else
             {
                 HideTrails();
                 HideDrifittingEffect();
-                SetWheelStiffness(1.6f); // Reset wheel stiffness to default
+                SetWheelStiffness(1.9f); // Reset wheel stiffness to default
             }
 
             if (IsPerfectDrifting())
@@ -110,7 +144,6 @@ public class CarController : Car
                 OnCarDrifted?.Invoke(this, EventArgs.Empty);
             }
 
-            // Update wheel meshes to match the wheel colliders
             UpdateWheelMeshes();
 
             HandleCarFlipping();
@@ -127,10 +160,15 @@ public class CarController : Car
 
     public void Recover()
     {
+        // this value to ensure that the car position up the track before that value there was a problem 
+        // sometimes the cars recoverd under the track and this value solved the problem.
+        const float carRecoverYOffset = 2f;
+
         if (currentWaypointIndex > 0)
         {
             currentWaypointIndex--;
-            transform.position = waypoints[currentWaypointIndex].position;
+            var waypointTransform = waypoints[currentWaypointIndex].position;
+            transform.position = new Vector3(waypointTransform.x, waypointTransform.y + carRecoverYOffset, waypointTransform.z);
         }
         else
         {
@@ -142,7 +180,7 @@ public class CarController : Car
         //it continue flying so i set velocity to 0 to sure the car stop.
         carRigidbody.velocity = Vector3.zero;
         carRigidbody.angularVelocity = Vector3.zero;
-        transform.rotation = waypoints[currentWaypointIndex - 1].rotation;
+        transform.rotation = waypoints[currentWaypointIndex].rotation;
     }
 
     public override void OnTriggerEnter(Collider other)
@@ -166,6 +204,14 @@ public class CarController : Car
         }
     }
 
+    private void ApplyNitroBoost()
+    {
+        carRigidbody.mass = 300;
+
+        ShowNitroEffect();
+        SoundManager.Get().PlayNitroSound();
+    }
+
     private void HideTrails()
     {
         foreach (TrailRenderer item in trails)
@@ -179,6 +225,22 @@ public class CarController : Car
         foreach (TrailRenderer item in trails)
         {
             item.emitting = true;
+        }
+    }
+
+    private void ShowNitroEffect()
+    {
+        foreach (GameObject particle in nitroEffects)
+        {
+            particle.SetActive(true);
+        }
+    }
+
+    private void HideNitroEffect()
+    {
+        foreach (GameObject particle in nitroEffects)
+        {
+            particle.SetActive(false);
         }
     }
 

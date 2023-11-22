@@ -9,6 +9,8 @@ TagManager:
   - FinishLine
   - Waypoint
   - Car
+  - Terrain
+  - Track
   layers:
   - Default
   - TransparentFX

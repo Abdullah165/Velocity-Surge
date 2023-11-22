@@ -19,7 +19,7 @@ public class GameStartCountDownUI : MonoBehaviour
         {
             if (CarGameManager.Get().GetCountDownToStartTimer() < MINIMUM_COUNTDOWN_TIMER)
             {
-                countDownText.text = "GO";
+                countDownText.text = "GO!";
             }
             else
             {

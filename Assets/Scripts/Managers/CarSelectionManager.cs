@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using Cinemachine;
-using System.Collections.Generic;
 
 public class CarSelectionManager : MonoBehaviour
 {

@@ -13,7 +13,6 @@ public class GameOverUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreValueText;
     [SerializeField] private TextMeshProUGUI bestScoreText;
     [SerializeField] private TextMeshProUGUI bestScoreValueText;
-    [SerializeField] private TextMeshProUGUI newBestScoreText;
     [SerializeField] private TextMeshProUGUI youWinText;
     [SerializeField] private TextMeshProUGUI yourCashValueText;
 
@@ -29,6 +28,7 @@ public class GameOverUI : MonoBehaviour
     private int playerReward;
 
     private Difficulty selectedDifficulty;
+    private Season selectedSeason;
 
     public static GameOverUI Get() => Instance;
 
@@ -53,7 +53,10 @@ public class GameOverUI : MonoBehaviour
             youWinText.gameObject.SetActive(false);
             yourCashValueText.text = PlayerPrefs.GetInt(PlayerPrefsKeys.PlayerCash.ToString(), 0).ToString();
 
-            CarSelectionManager.Get().GetCurrentCarController().StopCarAudio();
+            if (CarSelectionManager.Get() != null)
+            {
+                CarSelectionManager.Get().GetCurrentCarController().StopCarAudio();
+            }
         }
     }
 
@@ -82,8 +85,11 @@ public class GameOverUI : MonoBehaviour
         bestScore = PlayerPrefs.GetFloat(PlayerPrefsKeys.BestScore.ToString(), 0.0f);
         UpdateBestScore();
 
-        int difficultyValue = PlayerPrefs.GetInt(PlayerPrefsKeys.SelectedDifficulty.ToString());
-        selectedDifficulty = (Difficulty)difficultyValue;
+        int difficulty = PlayerPrefs.GetInt(PlayerPrefsKeys.SelectedDifficulty.ToString());
+        selectedDifficulty = (Difficulty)difficulty;
+
+        int season = PlayerPrefs.GetInt(PlayerPrefsKeys.SelectedSeason.ToString());
+        selectedSeason = (Season)season;
     }
 
     private void GameOverUI_OnPlayerWin(object sender, CarController.OnPlayerWinEventArgs e)
@@ -116,7 +122,12 @@ public class GameOverUI : MonoBehaviour
             PlayerPrefs.SetFloat(PlayerPrefsKeys.BestScore.ToString(), bestScore);
 
             playerReward = 200;
-            newBestScoreText.gameObject.SetActive(true);
+            isPlayerWon = true;
+        }
+        else
+        {
+            isPlayerWon = false;
+            canPlayLoseSound = true;
         }
 
         UpdateBestScore();
@@ -146,7 +157,6 @@ public class GameOverUI : MonoBehaviour
         scoreValueText.gameObject.SetActive(false);
         bestScoreText.gameObject.SetActive(false);
         bestScoreValueText.gameObject.SetActive(false);
-        newBestScoreText.gameObject.SetActive(false);
 
         canPlayLoseSound = true;
     }
@@ -181,13 +191,16 @@ public class GameOverUI : MonoBehaviour
         switch (selectedDifficulty)
         {
             case Difficulty.Easy:
-                playerReward = 100;
+                if (selectedSeason == Season.Summer) playerReward = 200;
+                else playerReward = 100;
                 break;
             case Difficulty.Medium:
-                playerReward = 200;
+                if (selectedSeason == Season.Summer) playerReward = 300;
+                else playerReward = 200;
                 break;
             case Difficulty.Hard:
-                playerReward = 400;
+                if (selectedSeason == Season.Summer) playerReward = 500;
+                else playerReward = 400;
                 break;
         }
     }

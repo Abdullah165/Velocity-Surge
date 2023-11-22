@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: -2571118854743697038, guid: af66ba5f2e7b7c64c959049055a6a7a7,
         type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: af66ba5f2e7b7c64c959049055a6a7a7,
         type: 3}
@@ -154,7 +154,7 @@ PrefabInstance:
     - target: {fileID: 7202271454713460447, guid: af66ba5f2e7b7c64c959049055a6a7a7,
         type: 3}
       propertyPath: m_CastShadows
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

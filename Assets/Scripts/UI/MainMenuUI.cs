@@ -5,10 +5,12 @@ public class MainMenuUI : MonoBehaviour
 {
     [SerializeField] private Button playButton;
     [SerializeField] private Button aboutButton;
+    [SerializeField] private Button rewardsButton;
     [SerializeField] private Button exitButton;
 
     [SerializeField] private GameObject playMenuUI;
     [SerializeField] private GameObject aboutMenuUI;
+    [SerializeField] private GameObject rewardMenuUI;
 
     private void OnEnable()
     {
@@ -26,6 +28,12 @@ public class MainMenuUI : MonoBehaviour
         aboutButton.onClick.AddListener(() =>
         {
             aboutMenuUI.SetActive(true);
+            gameObject.SetActive(false);
+        });
+
+        rewardsButton.onClick.AddListener(() =>
+        {
+            rewardMenuUI.SetActive(true);
             gameObject.SetActive(false);
         });
 

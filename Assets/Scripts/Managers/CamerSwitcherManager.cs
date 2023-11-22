@@ -23,7 +23,7 @@ public class CamerSwitcherManager : MonoBehaviour
         }
     }
 
-    public void ResetCameraPriority()
+    private void ResetCameraPriority()
     {
         finishLineCamera.Priority = 0;
     }

@@ -2,9 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class CarSelectionUI : MonoBehaviour
 {
-    [SerializeField] private Button nextButton;
+    [SerializeField] private Button playButton;
     [SerializeField] private Button buyButton;
     [SerializeField] private Button backButton;
 
@@ -13,6 +14,8 @@ public class CarSelectionUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI playerCashText;
     [SerializeField] private TextMeshProUGUI carPriceText;
+
+    [SerializeField] private Button rewardedButton;
 
     [SerializeField] private GameObject playMenuUI;
 
@@ -28,14 +31,18 @@ public class CarSelectionUI : MonoBehaviour
 
     private void OnEnable()
     {
-        nextButton.Select();
+        playButton.Select();
+
+        int currentSeason = PlayerPrefs.GetInt(PlayerPrefsKeys.SelectedSeason.ToString());
+        selectedSeason = (Season)currentSeason;
+
         GameInputManager.Get().OnPauseAction += CarSelectionUI_OnPauseAction;
     }
 
     private void Awake()
     {
         Hide();
-        nextButton.onClick.AddListener(() =>
+        playButton.onClick.AddListener(() =>
         {
             CarSpecificationSO currentCarSpecification = CarSpecificationsManager.Get().GetCurrentCarSpecification();
             int currentCarPrice = PlayerPrefs.GetInt($"Car{currentCarSpecification}_Price");
@@ -54,10 +61,10 @@ public class CarSelectionUI : MonoBehaviour
             PlayerPrefs.SetInt(PlayerPrefsKeys.PlayerCash.ToString(), playerCashAmount);
             playerCashText.text = playerCashAmount.ToString();
 
-            nextButton.gameObject.SetActive(true);
+            playButton.gameObject.SetActive(true);
             buyButton.gameObject.SetActive(false);
 
-            nextButton.Select();
+            playButton.Select();
         });
 
         backButton.onClick.AddListener(() =>
@@ -73,11 +80,11 @@ public class CarSelectionUI : MonoBehaviour
             if (CanBuyNewCar())
             {
                 buyButton.gameObject.SetActive(true);
-                nextButton.gameObject.SetActive(false);
+                playButton.gameObject.SetActive(false);
             }
             else
             {
-                nextButton.gameObject.SetActive(true);
+                playButton.gameObject.SetActive(true);
                 buyButton.gameObject.SetActive(false);
             }
         });
@@ -89,13 +96,34 @@ public class CarSelectionUI : MonoBehaviour
             if (CanBuyNewCar())
             {
                 buyButton.gameObject.SetActive(true);
-                nextButton.gameObject.SetActive(false);
+                playButton.gameObject.SetActive(false);
             }
             else
             {
-                nextButton.gameObject.SetActive(true);
+                playButton.gameObject.SetActive(true);
                 buyButton.gameObject.SetActive(false);
             }
+        });
+
+        rewardedButton.onClick.AddListener(() =>
+        {
+            // TODO: Reward the user.
+            int playerReward = 200;
+            int oldPlayerCash = PlayerPrefs.GetInt(PlayerPrefsKeys.PlayerCash.ToString(), 0);
+            PlayerPrefs.SetInt(PlayerPrefsKeys.PlayerCash.ToString(), playerReward + oldPlayerCash);
+            playerCashText.text = PlayerPrefs.GetInt(PlayerPrefsKeys.PlayerCash.ToString(), 0).ToString();
+
+            if (CanBuyNewCar())
+            {
+                buyButton.gameObject.SetActive(true);
+                playButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                playButton.gameObject.SetActive(true);
+                buyButton.gameObject.SetActive(false);
+            }
+
         });
     }
 
@@ -123,8 +151,16 @@ public class CarSelectionUI : MonoBehaviour
         carModels[currentIndex].SetActive(true);
         CarSpecificationsManager.Get().SetCurrentCar(currentIndex);
 
-        int seasonValue = PlayerPrefs.GetInt(PlayerPrefsKeys.SelectedSeason.ToString());
-        selectedSeason = (Season)seasonValue;
+        if (CanBuyNewCar())
+        {
+            buyButton.gameObject.SetActive(true);
+            playButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            playButton.gameObject.SetActive(true);
+            buyButton.gameObject.SetActive(false);
+        }
     }
 
     private void UpdatePlayerCashTextUI()

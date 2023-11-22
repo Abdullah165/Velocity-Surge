@@ -9,6 +9,8 @@ public class GameInputManager : MonoBehaviour
 
     public event EventHandler OnPauseAction;
     public event EventHandler OnBrakeAction;
+    public event EventHandler OnNitroActionReady;
+    public event EventHandler OnNitroActionCanceled;
 
     private void Awake()
     {
@@ -19,6 +21,18 @@ public class GameInputManager : MonoBehaviour
 
         playerInputActions.Vehicle.Pause.performed += Pause_performed;
         playerInputActions.Vehicle.Brake.performed += Brake_performed;
+        playerInputActions.Vehicle.Nitro.performed += Nitro_performed;
+        playerInputActions.Vehicle.Nitro.canceled += Nitro_canceled;
+    }
+
+    private void Nitro_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnNitroActionCanceled?.Invoke(this, EventArgs.Empty);
+    }
+
+    private void Nitro_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnNitroActionReady?.Invoke(this, EventArgs.Empty);
     }
 
     private void Brake_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
@@ -29,7 +43,10 @@ public class GameInputManager : MonoBehaviour
 
     private void Pause_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        OnPauseAction?.Invoke(this, EventArgs.Empty);
+        if (CarGameManager.Get().IsGamePlaying())
+        {
+            OnPauseAction?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     private void OnDestroy()
@@ -38,6 +55,8 @@ public class GameInputManager : MonoBehaviour
 
         playerInputActions.Vehicle.Pause.performed -= Pause_performed;
         playerInputActions.Vehicle.Brake.performed -= Brake_performed;
+        playerInputActions.Vehicle.Nitro.performed -= Nitro_performed;
+        playerInputActions.Vehicle.Nitro.canceled -= Nitro_canceled;
     }
     public float GetMovementVertical()
     {

@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerCashUI : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class PlayerCashUI : MonoBehaviour
         perfectDriftTextOriginalPoistion = perfectDriftText.transform.localPosition;
 
         CarSelectionManager.Get().GetCurrentCarController().OnCarDrifted += PlayerCashUI_OnCarDrifted;
+
     }
 
     private void PlayerCashUI_OnCarDrifted(object sender, System.EventArgs e)

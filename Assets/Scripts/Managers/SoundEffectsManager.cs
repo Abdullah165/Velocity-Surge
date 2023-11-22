@@ -11,6 +11,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioSource playerLoseSound;
     [SerializeField] private AudioSource tireScreechSound;
     [SerializeField] private AudioSource bounsSound;
+    [SerializeField] private AudioSource countDownSound;
+    [SerializeField] private AudioSource nitroSound;
 
     private void Awake()
     {
@@ -30,13 +32,19 @@ public class SoundManager : MonoBehaviour
         }
 
         CarSelectionManager.Get().GetCurrentCarController().OnCarDrifted += SoundManager_OnCarDrifted;
+
+        countDownSound.Play();
     }
+
 
     private void SoundManager_OnCarDrifted(object sender, System.EventArgs e)
     {
         bounsSound.Play();
         tireScreechSound.Play();
     }
+
+    public void PlayNitroSound() => nitroSound.Play();
+    public void StopNitroSound() => nitroSound.Stop();
 
     public void PlayWinSound() => playerWinSound.Play();
 

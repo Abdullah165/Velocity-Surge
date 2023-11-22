@@ -126,10 +126,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2571118854743697038, guid: 7f403a5ab8d62f54b9fbaf6984e6d714,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7f403a5ab8d62f54b9fbaf6984e6d714,
         type: 3}
       propertyPath: m_Name
       value: FallTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202271454713460447, guid: 7f403a5ab8d62f54b9fbaf6984e6d714,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

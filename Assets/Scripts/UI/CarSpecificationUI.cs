@@ -15,7 +15,7 @@ public class CarSpecificationUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI carPrice; 
 
-    private readonly float duration = 0.9f;
+    private const float duration = 0.6f;
 
     private void OnEnable()
     {
